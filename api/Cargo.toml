@@ -1,8 +1,11 @@
 [package]
-name = "api"
+name = "tornhq"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = ["api", "database"]
 
 [dependencies]
+api = { version = "0.1.0", path = "api" }
+database = { version = "0.1.0", path = "database" }
