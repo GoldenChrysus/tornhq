@@ -16,16 +16,19 @@ impl MigrationTrait for Migration {
                     .col(
                         ColumnDef::new(Users::AllowDefendContractRequests)
                             .boolean()
+                            .not_null()
                             .default(false),
                     )
                     .col(
                         ColumnDef::new(Users::AllowAutoDefendContractLink)
                             .boolean()
+                            .not_null()
                             .default(false),
                     )
                     .col(
                         ColumnDef::new(Users::AllowAutoDefendContractLog)
                             .boolean()
+                            .not_null()
                             .default(false),
                     )
                     .col(
@@ -47,16 +50,19 @@ impl MigrationTrait for Migration {
                     .col(
                         ColumnDef::new(Users::AllowLossContractRequests)
                             .boolean()
+                            .not_null()
                             .default(false),
                     )
                     .col(
                         ColumnDef::new(Users::AllowAutoLossContractLink)
                             .boolean()
+                            .not_null()
                             .default(false),
                     )
                     .col(
                         ColumnDef::new(Users::AllowAutoLossContractLog)
                             .boolean()
+                            .not_null()
                             .default(false),
                     )
                     .col(
