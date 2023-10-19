@@ -17,7 +17,11 @@ impl MigrationTrait for Migration {
                             .not_null()
                             .primary_key(),
                     )
-                    .col(ColumnDef::new(LossLogs::LossContractId).big_integer().not_null())
+                    .col(
+                        ColumnDef::new(LossLogs::LossContractId)
+                            .big_integer()
+                            .not_null(),
+                    )
                     .col(ColumnDef::new(LossLogs::AttackerId).integer().not_null())
                     .col(ColumnDef::new(LossLogs::DefenderId).integer().not_null())
                     .col(ColumnDef::new(LossLogs::LogTime).integer().not_null())

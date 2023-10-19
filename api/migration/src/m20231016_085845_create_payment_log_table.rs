@@ -18,7 +18,11 @@ impl MigrationTrait for Migration {
                             .primary_key(),
                     )
                     .col(ColumnDef::new(PaymentLogs::SenderId).integer().not_null())
-                    .col(ColumnDef::new(PaymentLogs::RecipientId).integer().not_null())
+                    .col(
+                        ColumnDef::new(PaymentLogs::RecipientId)
+                            .integer()
+                            .not_null(),
+                    )
                     .col(ColumnDef::new(PaymentLogs::Amount).decimal().not_null())
                     .to_owned(),
             )

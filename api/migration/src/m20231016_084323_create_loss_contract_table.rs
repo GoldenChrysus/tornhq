@@ -1,6 +1,9 @@
 use sea_orm_migration::{prelude::*, sea_query::extension::postgres::Type};
 
-use crate::{enums::{ApprovalStatus, LossContractType}, types::Types};
+use crate::{
+    enums::{ApprovalStatus, LossContractType},
+    types::Types,
+};
 
 #[derive(DeriveMigrationName)]
 pub struct Migration;
